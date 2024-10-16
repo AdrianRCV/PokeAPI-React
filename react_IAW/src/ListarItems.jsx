@@ -30,7 +30,13 @@ import json2 from './heroes.json';
 export const ListarTabla= () => {
     function getItems(){ return json2.map((heroe,index) => {
         if (heroe.publisher=="DC Comics"){
-            return <tr key={index}> <td>{heroe.superhero}</td></tr>;
+            return <tr key={index}>
+                        <td>{heroe.superhero}</td>
+                        <td>{heroe.alter_ego}</td>
+                        <td>{heroe.publisher}</td>
+                        <td>{heroe.first_appearance}</td>
+                        <td>{heroe.characters}</td>
+                    </tr>;
         }
     
     });
@@ -38,8 +44,22 @@ export const ListarTabla= () => {
 }
 return (
     <table> 
-        <tr><th>Nombre Del Héroe</th></tr>
+        <tr>
+            <th>Nombre Del Héroe</th>
+            <th>Alter ego</th>
+            <th>Publisher</th>
+            <th>Primera Aparición</th>
+            <th>Character</th>
+        </tr>
         {getItems()}
     </table>
     )
 }
+
+export default function ExtraerINFO(props) {
+    if(props.tipo=="tabla"){
+    return <ProcesarJSONTabla/>
+    }
+    else return <ProcesarJSONLista />
+   }
+   
