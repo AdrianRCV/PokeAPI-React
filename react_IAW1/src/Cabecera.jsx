@@ -1,18 +1,18 @@
 import React from 'react'
 
-export function Cabecera1() {
+export  function Cabecera() {
   return (
-    <h1>Clase de IAW 2024</h1>
+    <h1>Clase de IAW del curso 2024-25</h1>
   )
 }
 
-export function Cabecera2() {
+export  function Cabecera1() {
   return (
-    <h2>Segunda Cabecera</h2>
+    <h2>Usando otra cabecera</h2>
   )
 }
 
-export function Cabecera3(props) {
+export  function Cabecera2(props) {
   return (
     <>
       <li>{props.mensaje}</li>
@@ -21,7 +21,7 @@ export function Cabecera3(props) {
   )
 }
 
-export function Cabecera4({mensaje="mensaje123",otro}) {
+export  function Cabecera3({mensaje,otro}) {
   return (
     <>
       <li>{mensaje}</li>
