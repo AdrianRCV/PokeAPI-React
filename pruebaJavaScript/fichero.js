@@ -1,5 +1,5 @@
-function adivinaNumeroTS1() {
-    var numero = Math.floor(Math.random() * 100) + 1;
+function adivinaNumeroTS() {
+    var numero = Math.floor(Math.random() * 10) + 1;
     console.log(numero);
     var consulta, contador = 0;
     do {
@@ -18,4 +18,3 @@ function adivinaNumeroTS1() {
     } while (consulta != -1);
     alert("El número correcto es: " + numero + " y has realizado " + contador + " intentos.");
 }
-adivinaNumeroTS1();
