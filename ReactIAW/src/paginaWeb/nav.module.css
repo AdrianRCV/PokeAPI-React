@@ -1,0 +1,20 @@
+nav {
+    display: flex;
+    height: auto;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0%;
+}
+
+.contenidonav {
+    color: aqua;
+    background-color: darkgreen;
+    padding-left: 158px;             /*159px*/
+    padding-right: 158px;
+    text-decoration: none;
+    border: solid 1px black;
+}
+
+.contenidonav:hover {
+    background-color: lightslategray;
+}
