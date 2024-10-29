@@ -1,13 +1,14 @@
 import React from 'react'
 import style from './nav.module.css'
-
 import { IoIosContact } from "react-icons/io";
+import { Link } from 'react-router-dom';
+
 function Nav() {
   return (
     <nav>
-        <a href="#" className={style.contenidonav}>Inicio</a> 
-        <a href="#" className={style.contenidonav}>Noticias</a> 
-        <a href="#" className={style.contenidonav}><IoIosContact />Contacto</a> 
+        <Link to="/" className={style.contenidonav}>Inicio</Link> 
+        <Link to="/producto" className={style.contenidonav}>Noticias</Link> 
+        <Link to="/about" className={style.contenidonav}><IoIosContact />Contacto</Link> 
     </nav>
   )
 }

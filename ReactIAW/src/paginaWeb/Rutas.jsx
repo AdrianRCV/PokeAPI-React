@@ -7,7 +7,7 @@ export default function Rutas() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home/>} />
-	    <Route path="/nombre" element={<MySkills/>} />
+	      <Route path="/nombre" element={<MySkills/>} />
         <Route path="/producto/:numero" element={<Producto/>} />
         <Route path="/about" element={<About/>} />
       </Routes>
@@ -35,5 +35,5 @@ function MySkills() {
 function Producto() {
     //Lectura del parámetro de la URL
     const params = useParams();
-    return <h2>Parámetro introducido: {params.numero}</h2>;
+    return <h2>PRODUCTO ELEGIDO: {params.numero}</h2>;
 }
