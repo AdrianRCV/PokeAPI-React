@@ -29,7 +29,7 @@ function Contenido() {
           <Route path="/noticias/jefatura" element={<Jefatura/>} />  
           <Route path="/noticias/informatica" element={<Informatica/>} />  
         </Route>
-        {/* <Route path="/producto/:numero" element={<Producto/>} /> */}
+        { <Route path="/producto/:numero" element={<Producto/>} /> }
         <Route path="/about" element={<About/>} />
         <Route path="*" element={<NotFound/>} />
         </Routes>  
@@ -43,7 +43,7 @@ function Contenido() {
 
 export default Contenido
 function Home() {
-  return <div>home</div>;
+  return <Tarjeta/>;
 }
 
 //Sólo se verá con /about en la URL

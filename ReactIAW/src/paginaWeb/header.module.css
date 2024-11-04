@@ -1,6 +1,4 @@
 .cabecera{
-    /* background-color:red; */
-    /* background-image: url('/header.jpg'); */
     background: linear-gradient(rgb(146, 138, 138) 25%, transparent 75%),  url('/header.jpg') no-repeat center;
     background-repeat:  no-repeat;
     background-position: center;
