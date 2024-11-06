@@ -14,6 +14,7 @@ function Nav() {
         <Link to="/noticias" className={style.contenidonav}><IoIosPaper />Noticias</Link>
         <Link to="/noticias/jefatura" className={style.contenidonav}><FaClipboardList />Noticias Jefatura</Link>
         <Link to="/noticias/informatica" className={style.contenidonav}><FaLaptop />Departamento Informática</Link> 
+        <Link to="/noticias/otra" className={style.contenidonav}>OTRA</Link>
         <Link to="/about" className={style.contenidonav}><IoIosContact />Contacto</Link> 
     </nav>
   )

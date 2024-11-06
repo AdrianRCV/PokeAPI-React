@@ -1,30 +1,12 @@
-const fetchData = async (id) => {
-    //Para usar await la función tiene que usar async
-    const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
-    const data = await res.json();
-    const pokemon = {
-    numero: data.id,img:`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`,
-    imgJuego: data.sprites.front_default,
-    imgCvg: data.sprites.other.dream_world.front_default,
-    nombre: data.name,
-    experiencia: data.base_experience,
-    hp: data.stats[0].base_stat,
-    ataque: data.stats[1].base_stat,
-    defensa: data.stats[2].base_stat,
-    especial: data.stats[3].base_stat,
-    };
-return pokemon;
-};
-
-export const Pokemon = ({id}) => {
-    let pokemon = fetchData(id);
-    console.log(pokemon);
-    return (
-    <div>
-    <h3> Número: {pokemon.numero} - {pokemon.nombre}</h3>
-    <img src={pokemon.img} alt="pokemon"/>
-    <p>HP: {pokemon.hp} Ataque: {pokemon.ataque} Defensa:
-    {pokemon.defensa}</p>
-    </div>
-    )
-}
+import React, {useState,useEffect} from 'react'
+export const Pokemon = ({id}) => { const [pokemon, setName] = useState([]);
+useEffect(() => { 
+fetch("https://pokeapi.co/api/v2/pokemon/"+id) 
+.then(res => res.json())  
+.then(data => setName( 
+{ numero: data.id, img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/"+data.id+".png", imgJuego: data.sprites.front_default, imgCvg: data.sprites.other.dream_world.front_default, nombre: data.name, experiencia: data.base_experience, hp: data.stats[0].base_stat, ataque: data.stats[1].base_stat, defensa: data.stats[2].base_stat, especial: data.stats[3].base_stat, } )); }, []); 
+return ( 
+<div> 
+<h3> Número: {pokemon.numero} - {pokemon.nombre}</h3> <img src={pokemon.img} alt="pokemon"/> <p>HP: {pokemon.hp} Ataque: {pokemon.ataque} Defensa: {pokemon.defensa}</p> 
+</div> 
+)}
