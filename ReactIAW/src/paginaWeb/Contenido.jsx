@@ -2,7 +2,6 @@ import React from 'react'
 import Nav from './Nav'
 import { BrowserRouter as Router, Route, Routes, useParams, Outlet } from "react-router-dom";
 import Section from './Section'
-import Aside from './Aside'
 
 import Tarjeta from './Cards';
 import './contenido.module.css'
@@ -16,27 +15,16 @@ function Contenido() {
     <Router>
     <Nav/>
     <main>
-    
-      <aside>
-        <Aside/>
-        <Routes>
-          <Route path="/about" element={<About2/>} />
-        </Routes>
-      </aside>
-        {/* <Section/> */}
         <section>
         <Routes>
         <Route exact path="/" element={<Home/>} />
-	           <Route path="/noticias" element={<Noticias/>}>
-          <Route path="/noticias/jefatura" element={<Jefatura/>} />  
-          <Route path="/noticias/informatica" element={<Informatica/>} />  
-        </Route>
+        <Route exact path='/gen1' element={<Gen1/>}/>
+        <Route exact path='/gen2' element={<Gen2/>}/>
+        <Route exact path='/gen3' element={<Gen3/>}/>
         { <Route path="/producto/:numero" element={<Producto/>} /> }
-        <Route path="/about" element={<About/>} />
         <Route path="*" element={<NotFound/>} />
         </Routes>  
         </section>
-    
     </main>
     </Router>
     </>
@@ -44,13 +32,21 @@ function Contenido() {
 }
 
 export default Contenido
+
 function Home() {
   return <Pokemon id="7" />;
 }
 
-//Sólo se verá con /about en la URL
-function About(){
-  return <h2>ABOUT</h2>
+function Gen1() {
+  return 
+}
+
+function Gen2() {
+  return 
+}
+
+function Gen3() {
+  return 
 }
 
 function About2() {
