@@ -34,11 +34,11 @@ function Contenido() {
 export default Contenido
 
 function Home() {
-  return <Pokemon id="7" />;
+  return <h2>Elige una generación</h2>;
 }
 
 function Gen1() {
-  return 
+  return <Pokemon/>
 }
 
 function Gen2() {
