@@ -1,26 +1,14 @@
-main{
-    height:500px;
-    width:100%;
-    display:flex;
-    flex:row nowrap;
-}
-
-main section{
+div {
+    height: 100%;
     width:100%;
     background-color:antiquewhite;
+    margin: 0;
 }
 
-main aside{
-    width:20%;
-    background-color:blueviolet;
+h2 {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
 }
-
-@media (max-width:800px){
-    aside{
-        display:none;
-    }
-    main section{
-        width:100%;
-    }
-
-  }

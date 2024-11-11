@@ -8,6 +8,7 @@ function Nav() {
         <Link to="/gen1" className={style.contenidonav}>Gen1</Link> 
         <Link to="/gen2" className={style.contenidonav}>Gen2</Link>
         <Link to="/gen3" className={style.contenidonav}>Gen3</Link>
+        <Link to="/digimons" className={style.contenidonav}>Digimons</Link>
     </nav>
   )
 }

@@ -1,6 +1,5 @@
 import React from 'react'
 import './footer.module.css'
-/* Iconos MaterialUI */
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LanguageIcon from '@mui/icons-material/Language';
