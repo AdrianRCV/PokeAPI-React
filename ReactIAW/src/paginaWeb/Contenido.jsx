@@ -2,10 +2,7 @@ import React from 'react'
 import Nav from './Nav'
 import { BrowserRouter as Router, Route, Routes, useParams, Outlet } from "react-router-dom";
 import Section from './Section'
-
-import Tarjeta from './Cards';
 import './contenido.module.css'
-import Rutas from './Rutas'
 import {Pokemon,Pokemon2,Pokemon3} from './Pokemon'
 import { Digimon } from './Digimons';
 

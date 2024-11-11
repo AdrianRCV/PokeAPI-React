@@ -24,12 +24,12 @@ export const Pokemon = () => {
     }, []);
 
     return (
-        <div className="pokemon-list" style={{display:'flex', flexWrap:'wrap', justifyContent:'space-around', alignItems:'center'}}>
+        <div className="pokemon-list" style={{display:'flex', flexWrap:'wrap', justifyContent:'space-around', alignItems:'center', textAlign:'center'}}>
             {pokemons.map((pokemon, index) => (
                 <Card key={index} style={{ height: '350px', margin: '10px', width: '230px',}}>
-                    <h3> Número: {pokemon.numero} - {pokemon.nombre}</h3>
+                    <h3> Número: {pokemon.numero}   {pokemon.nombre}</h3>
                     <img src={pokemon.img} alt="pokemon" style={{ width: '100%', height: 'auto' }} />
-                    <p>HP: {pokemon.hp} Ataque: {pokemon.ataque} Defensa: {pokemon.defensa}</p>
+                    <p>HP:{pokemon.hp} Ataque:{pokemon.ataque} Defensa:{pokemon.defensa}</p>
                 </Card>
             ))}
         </div>
@@ -58,12 +58,12 @@ export const Pokemon2 = () => {
     }, []);
 
     return (
-        <div className="pokemon-list" style={{display:'flex', flexWrap:'wrap', justifyContent:'space-around', alignItems:'center'}}>
+        <div className="pokemon-list" style={{display:'flex', flexWrap:'wrap', justifyContent:'space-around', alignItems:'center', textAlign:'center'}}>
             {pokemons.map((pokemon, index) => (
                 <Card key={index} style={{ height: '350px', margin: '10px', width: '230px',}}>
-                    <h3> Número: {pokemon.numero} - {pokemon.nombre}</h3>
+                    <h3> Número: {pokemon.numero}   {pokemon.nombre}</h3>
                     <img src={pokemon.img} alt="pokemon" style={{ width: '100%', height: 'auto' }} />
-                    <p>HP: {pokemon.hp} Ataque: {pokemon.ataque} Defensa: {pokemon.defensa}</p>
+                    <p>HP:{pokemon.hp} Ataque:{pokemon.ataque} Defensa:{pokemon.defensa}</p>
                 </Card>
             ))}
         </div>
@@ -92,12 +92,12 @@ export const Pokemon3 = () => {
     }, []);
 
     return (
-        <div className="pokemon-list" style={{display:'flex', flexWrap:'wrap', justifyContent:'space-around', alignItems:'center'}}>
+        <div className="pokemon-list" style={{display:'flex', flexWrap:'wrap', justifyContent:'space-around', alignItems:'center', textAlign:'center'}}>
             {pokemons.map((pokemon, index) => (
                 <Card key={index} style={{ height: '350px', margin: '10px', width: '230px',}}>
-                    <h3> Número: {pokemon.numero} - {pokemon.nombre}</h3>
+                    <h3> Número: {pokemon.numero}   {pokemon.nombre}</h3>
                     <img src={pokemon.img} alt="pokemon" style={{ width: '100%', height: 'auto' }} />
-                    <p>HP: {pokemon.hp} Ataque: {pokemon.ataque} Defensa: {pokemon.defensa}</p>
+                    <p>HP:{pokemon.hp} Ataque:{pokemon.ataque} Defensa: {pokemon.defensa}</p>
                 </Card>
             ))}
         </div>
