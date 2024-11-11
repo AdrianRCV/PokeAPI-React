@@ -45,7 +45,7 @@ function Contenido() {
 
 export default Contenido
 function Home() {
-  return <Pokemon id="27" />;
+  return <Pokemon id="7" />;
 }
 
 //Sólo se verá con /about en la URL
