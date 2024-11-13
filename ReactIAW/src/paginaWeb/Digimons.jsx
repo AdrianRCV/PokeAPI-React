@@ -9,7 +9,7 @@ export const Digimon = () => {
             let randomDigimons = [];
 
             while (randomDigimons.length < 10) {
-                const randomId = Math.floor(Math.random() * 100) + 1;
+                const randomId = Math.floor(Math.random() * 1460) + 1;
 
                 const response = await fetch(`https://digi-api.com/api/v1/digimon/${randomId}`);
                 const digimonData = await response.json();

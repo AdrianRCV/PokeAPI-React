@@ -15,7 +15,7 @@ export default function Rutas() {
     </Router>
   );
 }
-
+/*
 function Navbar() {
   // visible en cada página
   return <div>navbar</div>;
@@ -38,3 +38,4 @@ function Producto() {
     const params = useParams();
     return <h2>PRODUCTO ELEGIDO: {params.numero}</h2>;
 }
+*/

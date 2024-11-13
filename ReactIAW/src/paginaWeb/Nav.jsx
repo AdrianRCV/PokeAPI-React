@@ -9,6 +9,7 @@ function Nav() {
         <Link to="/gen2" className={style.contenidonav}>Gen2</Link>
         <Link to="/gen3" className={style.contenidonav}>Gen3</Link>
         <Link to="/digimons" className={style.contenidonav}>Digimons</Link>
+        <Link to="/contactos" className={style.contenidonav}>Contactos</Link>
     </nav>
   )
 }
