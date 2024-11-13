@@ -1,14 +1,50 @@
-div {
-    height: 100%;
-    width:100%;
+main{
     background-color:antiquewhite;
-    margin: 0;
+    height:100%;
+    width:100%;
+    display:flex;
+    flex:row nowrap;
+}
+
+main section{
+    width:80%;
+    background-color:antiquewhite;
+}
+
+main aside{
+    padding: 25px;
+    width:20%;
+    background-color:antiquewhite;
 }
 
 h2 {
-    height: 500px;
+    text-align: center;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bolder;
+    margin-bottom: 0%;
+}
+
+li a {
+    font-size: 20px;
+    color: red;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+li a:hover {
+    font-size: 23px;
+    color: blue;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;  
+}
+
+p {
+    margin-top: 0%;
 }

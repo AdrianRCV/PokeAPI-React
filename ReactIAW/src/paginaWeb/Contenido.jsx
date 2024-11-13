@@ -2,9 +2,10 @@ import React from 'react'
 import Nav from './Nav'
 import { BrowserRouter as Router, Route, Routes, useParams, Outlet } from "react-router-dom";
 import Section from './Section'
-import './contenido.module.css'
+import style from './contenido.module.css'
 import { Pokemon, Pokemon2, Pokemon3 } from './Pokemon'
 import { Digimon } from './Digimons'
+import {RandomAvatar} from './Contactos'
 
 function Contenido() {
   return (
@@ -19,9 +20,10 @@ function Contenido() {
             <Route exact path='/gen3' element={<Gen3 />} />
             <Route exact path='/digimons' element={<Digimons />} />
             <Route path="/contactos" element={<Contacto />}>
-              <Route path="usuario" element={<Usuario />} />
+              <Route path="usuario1" element={<Usuario usuario="Usuario1" />} />
+              <Route path="usuario2" element={<Usuario usuario="Usuario2" />} />
+              <Route path="usuario3" element={<Usuario usuario="Usuario3" />} />
             </Route>
-            
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
@@ -54,15 +56,30 @@ function Digimons() {
 
 function Contacto() {
   return (
-    <div>
-      <h1>Contacto</h1>
-      <Outlet />
-    </div>
+    <main>
+      <aside>
+        <h1>Contactos</h1>
+        <ul>
+          <li><a href="/contactos/usuario1">Usuario 1</a></li>
+          <li><a href="/contactos/usuario2">Usuario 2</a></li>
+          <li><a href="/contactos/usuario3">Usuario 3</a></li>
+        </ul>
+      </aside>
+      <section>
+          <Outlet />
+      </section>
+    </main>
   );
 }
 
-function Usuario() {
-  return <h2>Ruta de Usuario bajo Contacto</h2>;
+function Usuario({usuario}) {
+  return (
+    <div>
+      <RandomAvatar/>
+      <h2>{usuario}</h2>
+      <p>{usuario}@correo.com</p>
+    </div>
+  );
 }
 
 function NotFound() {
