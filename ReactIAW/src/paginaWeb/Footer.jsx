@@ -20,7 +20,6 @@ function Footer({RRSS}) {
             }
           })
         }
-        {/*Enlace del instituto */}
         <a href="https://iescuravalera.es" > <img src="/logo.png" width="50" alt="logoIES"/> IES Cura Valera </a>
     </footer>
   )
