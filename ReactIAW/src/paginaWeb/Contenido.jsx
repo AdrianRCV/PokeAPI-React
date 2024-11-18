@@ -35,7 +35,7 @@ function Contenido() {
 export default Contenido;
 
 function Home() {
-  return <h2>Elige una generación</h2>;
+  return <h2 style={{height:"28vh"}}>Elige una generación</h2>;
 }
 
 function Gen1() {
