@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: react1-s
+  labels:
+    app: react1
+spec:
+  selector:
+    app: react1
+  type: LoadBalancer
+  ports:
+  - name: http-port
+    protocol: TCP
+    port: 82  # Puerto expuesto en el servicio
+    targetPort: 80  # Puerto expuesto en el contenedor
+    nodePort: 30480  # Para acceder desde el exterior (en el rango 30000-32767)
