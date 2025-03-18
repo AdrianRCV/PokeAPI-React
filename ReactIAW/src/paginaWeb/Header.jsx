@@ -4,7 +4,7 @@ import style from './header.module.css'
 function Header() {
   return (
     <header className={style.cabecera}>
-        <h1>USO BÁSICO RUTAS Y HOOKS CON POKEAPI y probando jenkins</h1>
+        <h1>USO BÁSICO RUTAS Y HOOKS CON POKEAPI y probando jenkins2</h1>
     </header>
   )
 }
