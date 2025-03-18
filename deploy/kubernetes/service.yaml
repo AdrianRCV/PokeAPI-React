@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: react1-s
+  name: react-s
   labels:
     app: react1
 spec:
