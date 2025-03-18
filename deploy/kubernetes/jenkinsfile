@@ -46,6 +46,7 @@ pipeline {
                     sh "kubectl apply -f deploy/kubernetes/deploy1.yaml"
                     sh "kubectl apply -f deploy/kubernetes/service1.yaml"
                     sh "kubectl apply -f deploy/kubernetes/pvc.yaml"
+                    sh "kubectl apply -f deploy/kubernetes/configMap.yaml"
                 }
             }
         }

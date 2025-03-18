@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-env-config
+data:
+  CONTEXTO: /home/adrian/HLC-Docker_y_Kubernetes/ACVExamenHLC
+  AUTOR: adrianrcv
+  TZ: Europe/Madrid
+  PROYECTO: PokeAPI-React
+  GITHUB: https://github.com/AdrianRCV/PokeAPI-React.git
+  USUARIO: adrianrcv
+  PASSWD: adrianrcv
+  HOSTNAME: PokeAPI-React
+  PORT_SSH: "45678"
+  PORT_ORIGEN: "8082"
