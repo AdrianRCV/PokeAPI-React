@@ -6,7 +6,7 @@ pipeline {
         NAMESPACE="default"
     }
     stages {
-        stage('Clonar repositorio git PokeAPI-HLC desde Github') {
+        stage('Clonar repositorio git Autocaravaneando desde Github') {
             steps {
                 git branch: 'main', url: 'https://github.com/AdrianRCV/PokeAPI-React.git'
             }
@@ -38,6 +38,14 @@ pipeline {
                 sh 'kubectl version --client'
                 // sh 'kubectl config current-context' // Verifica que está usando el contexto correcto
                 sh 'kubectl get nodes' // Confirma conexión con el clúster
+            }
+        }
+        stage('Deploy en Kubernetes') {
+            steps {
+                script {
+                    sh "kubectl apply -f deploy/kubernetes/deploy1.yaml"
+                    sh "kubectl apply -f deploy/kubernetes/service1.yaml"
+                }
             }
         }
     }
